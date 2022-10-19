@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Recipe Title</label>
+                    <input placeholder="Enter recepie title" type="text" class="form-control" name="recipeTitle" [(ngModel)]="recipeTitle">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form label">description</label>
+                    <textarea placeholder="Add Description" name="description" id="" cols="30" rows="10" class="form-control" [(ngModel)]="description"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">prepared By</label>
+                    <input type="text" class="form-control" name="preparedBy" [(ngModel)]="preparedBy">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">category</label>
+                    <select name="category" id="" class="form-control" [(ngModel)]="category">
+                        <option value="veg">veg</option>
+                        <option value="eggetarian">eggetarian</option>
+                        <option value="non-veg">non-veg</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Posted date</label>
+                    <input type="date" name="postedDate" id="" class="form-control" [(ngModel)]="postedDate">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-dark" (click)="readValue()">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
